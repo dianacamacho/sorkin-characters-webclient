@@ -1,0 +1,11 @@
+<h1>Characters Index</h1>
+
+<% @characters.each do |character| %>
+
+  <%= render partial: "character", locals: {character: character} %>
+  <hr>
+
+<% end %>
+
+
+

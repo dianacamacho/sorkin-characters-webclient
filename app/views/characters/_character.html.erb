@@ -1,0 +1,14 @@
+
+<%= link_to character.full_name, "/characters/#{character.id}" %>
+
+
+<ul>
+  <li><%= character.character_job_title %></li>
+  <li><%= character.actor_first_name %>
+  <%= character.actor_last_name %></li>
+  <li><%= character.show %></li>
+
+  <a href="/characters/<%= character.id %>/edit">Edit</a>
+  <a data-confirm="Delete character?" data-method="delete" href="/characters/<%= character.id %>" rel="nofollow" role="button" class="btn btn-default btn-sm active">Delete</a>
+</ul>
+

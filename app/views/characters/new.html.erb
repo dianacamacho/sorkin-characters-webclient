@@ -1,0 +1,35 @@
+<%= form_tag '/characters', method: :post do %>
+  <div>
+    <%= label_tag :first_name %>
+    <%= text_field_tag :first_name %>
+  </div>
+
+  <div>
+    <%= label_tag :last_name %>
+    <%= text_field_tag :last_name %>
+  </div>
+    
+   <div> 
+    <%= label_tag :job_title %>
+    <%= text_field_tag :job_title %>
+  </div>
+
+  <div>  
+    <%= label_tag :actor_first_name %>
+    <%= text_field_tag :actor_first_name %>
+  </div>
+  
+  <div>
+    <%= label_tag :actor_last_name %>
+    <%= text_field_tag :actor_last_name %>
+  </div>
+  
+  <div>
+    <%= label_tag :show %>
+    <%= text_field_tag :show %>
+  </div>
+    
+  <div><%= submit_tag "Submit" %></div>
+  
+
+<% end %>
